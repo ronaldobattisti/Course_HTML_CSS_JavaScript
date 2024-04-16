@@ -1,0 +1,15 @@
+body {
+    background-color: gray;
+}
+
+h1 {
+    color: red;
+}
+
+#title {
+    color: blue;
+}
+
+.paragraph {
+    font-size: 40px;
+}
