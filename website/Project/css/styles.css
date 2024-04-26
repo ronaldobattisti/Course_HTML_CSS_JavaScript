@@ -4,7 +4,7 @@
     --primary-text-color: #fff;
     --secondary-tet-color: #191919;
     --secondary-color: #868686;
-    -tertiary-colot: #eff3f4;
+    --tertiary-color: #eff3f4;
 }
 
 * {
@@ -153,13 +153,80 @@ i {
     gap: 2rem
 }
 
-.text-conteiner {
+.text-container {
     /* determine how bigger is than the other */
     flex: 2 1 0;
     display: flex;
     gap: 2rem;
     flex-direction: column;
-
     justify-content: center;
     text-align: right;
 }
+
+.section-subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main-color)
+}
+
+.section-title {
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+.btn {
+    padding: 1.2rem 1.8rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: var(--primary-text-color);
+    /*as it's in flex display, it will ever try to fill the width of the screen, so we need to do: */
+    align-self: end;
+
+}
+
+.image-conteiner {
+    flex: 1 1 300px;
+    position: relative;
+}
+
+.image-conteiner i {
+    position: absolute;
+}
+
+#other-services {
+    width: 100%;
+    /* all the images are in the same section, so width 100% and display flex puts everything in the same line */
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.service {
+    position: relative;
+}
+
+.service i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.service-info {
+    background-color: var(--tertiary-color);
+    padding: 2rem 1.4rem;
+    min-height: 250px;
+    margin-top: -3rem;
+    z-index: 2;
+    position: relative;
+}
+
+.service h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
