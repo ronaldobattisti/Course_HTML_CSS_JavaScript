@@ -230,3 +230,68 @@ i {
     text-transform: uppercase;
 }
 
+/* About us*/
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+#about-text {
+    background-image: url("../img/pattern.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 3rem;
+}
+
+#about-text .section-subtitle,
+#about-text .section-title {
+    color: var(--primary-text-color);
+}
+
+#about-text i {
+    background-color: transparent;
+}
+
+.about-description {
+    display: flex;
+    align-items: center;
+}
+
+.about-description h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#about-data {
+    flex: 1 1 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+#about-data .data {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* To put the border between the elements, 
+we will insert a border in the right and in 
+the botton of the first element, and a border 
+in the top and in the left of the 4th element.
+To select only the first element, will be used
+a pseudo selector, shown below:
+*/
+#about-data .data:first-child {}
